@@ -1,0 +1,181 @@
+/*
+ *   Copyright (c) 2022 
+ *   All rights reserved.
+ */
+@import url('https://fonts.googleapis.com/css2?family=Advent+Pro:wght@200&family=Bebas+Neue&family=Changa:wght@200&family=Cinzel:wght@600&family=Concert+One&family=Fredoka+One&family=Handlee&family=Ibarra+Real+Nova&family=Josefin+Sans&family=Lato:wght@300&family=Lobster&family=Mingzat&family=Montserrat:wght@300&family=Oleo+Script+Swash+Caps&family=Open+Sans:wght@300;400&family=Pacifico&family=Patrick+Hand&family=Permanent+Marker&family=Playfair+Display+SC:wght@700&family=Playfair+Display:wght@400;800&family=Poppins:wght@200&family=Raleway:wght@400;500&family=Roboto+Condensed&family=Roboto+Mono&family=Roboto:wght@300;400;700&family=Secular+One&family=Shadows+Into+Light&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-transform: capitalize;
+    font-family: 'Roboto', sans-serif;
+
+}
+
+
+.container {
+    background-image: radial-gradient(black, black), url("main\ bg.jpg");
+    background-blend-mode: lighten;
+    width: 100%;
+    min-height: 100vh;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    opacity: .99;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    padding: 5px 3%;
+}
+img.logo {
+    width: 10%;
+}
+
+.btn {
+    background-color: red;
+    width: 10%;
+    height: 10%;
+    padding: 8px;
+    text-align: center;
+    border-radius: 3px;
+    box-shadow: 0 3px 3px -1px black;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+.btn:hover {
+    background-color: rgb(201, 13, 13);
+}
+
+.btn a {
+    color: white;
+    text-decoration: none;
+}
+
+.content {
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 100px 0;
+}
+
+.content h1 {
+    font-size: 48px;
+    width: 40%;
+}
+
+.para {
+    text-align: center;
+}
+
+.para p:first-child {
+    margin-top: 20px;
+    font-size: 20px;
+    font-weight: 600;
+    letter-spacing: .8px;
+}
+
+.para p:last-child {
+    margin-top: 20px;
+    letter-spacing: .8px;
+}
+
+.starting{
+    margin-top: 20px;
+    display: flex;
+}
+input{
+    padding: 5px 20px;
+    outline: none; 
+    letter-spacing: 2PX;
+}
+.button{
+    background-color: red;
+    width: 45%;
+    padding: 5px 20px;
+    text-align: center;
+    cursor: pointer;
+}
+.button:hover{
+    background-color: rgb(201, 13, 13);
+    box-shadow: 0 3px 3px -1px black;
+}
+.button a{
+    color: white;
+    text-decoration: none;
+    word-spacing: 2px;
+    letter-spacing: 1px;
+}
+
+@media (max-width:300px){
+    .starting{
+        flex-direction: column;
+        gap:20px;
+    }
+    .button{
+        width: 100%;
+    }
+}
+@media (max-width:600px){
+    .navbar{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .container{
+        padding: 20px 0;
+    }
+    .logo img{
+        width: 20%;
+    }
+    .btn{
+        width:30%;
+    }
+    .content h1{
+        font-size: 32px;
+        width: 80%;
+    }
+    .content p{
+        padding: 0 10px;
+    }
+}
+
+@media (min-width:600px) and  (max-width:768px){
+    .logo img{
+        width: 20%;
+    }
+    .btn{
+        width: 15%;
+    }
+    .content h1{
+        font-size: 40px;
+        width: 60%;
+    }
+    .content p{
+        padding: 0 10px;
+    }
+}
+
+@media (min-width:768px) and (max-width:1024px){
+    .logo img{
+        width: 20%;
+    }
+    .content{
+        padding: 300px 0;
+    }
+    .btn{
+        width: 10%;
+    }
+    .content h1{
+        font-size: 44px;
+        width: 50%;
+    }
+    .content p{
+        padding: 0 10px;
+    }
+}

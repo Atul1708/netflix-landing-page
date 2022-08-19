@@ -1,0 +1,128 @@
+/*
+ *   Copyright (c) 2022 
+ *   All rights reserved.
+ */
+@import url('https://fonts.googleapis.com/css2?family=Advent+Pro:wght@200&family=Bebas+Neue&family=Changa:wght@200&family=Cinzel:wght@600&family=Concert+One&family=Fredoka+One&family=Handlee&family=Ibarra+Real+Nova&family=Josefin+Sans&family=Lato:wght@300&family=Lobster&family=Mingzat&family=Montserrat:wght@300&family=Oleo+Script+Swash+Caps&family=Open+Sans:wght@300;400&family=Pacifico&family=Patrick+Hand&family=Permanent+Marker&family=Playfair+Display+SC:wght@700&family=Playfair+Display:wght@400;800&family=Poppins:wght@200&family=Raleway:wght@400;500&family=Roboto+Condensed&family=Roboto+Mono&family=Roboto:wght@300;400;700&family=Secular+One&family=Shadows+Into+Light&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-transform: capitalize;
+    font-family: 'Roboto', sans-serif;
+
+}
+
+img {
+    max-width: 100%;
+}
+
+.container {
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(black, black), url("main\ bg.jpg");
+    background-blend-mode: screen;
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+form {
+    width: 30%;
+    background-color: black;
+    opacity: .9;
+    max-width: 600px;
+    padding:10px 15px;
+}
+
+.heading h1 {
+    color: lightgray;
+    margin-bottom: 25px;
+}
+
+.inpt-grp {
+    position: relative;
+    margin-bottom: 25px;
+}
+
+input[type="email"],
+input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    outline: none;
+    border: 1px solid lightgray;
+    color: lightgray;
+    background: transparent;
+    font-size: 15px;
+}
+
+label {
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 10px;
+    color: lightgray;
+    cursor: text;
+    transition: 0.2s;
+}
+
+button {
+    padding: 10px 0;
+    color: lightgray;
+    outline: none;
+    background: red;
+    cursor: pointer;
+    width: 100%;
+    border: 1px solid lightgray;
+}
+
+input:focus~label,
+input:valid~label {
+    top: -30px;
+    font-size: 14px;
+}
+
+.check {
+    color: lightgray;
+    margin-bottom: 20px;
+}
+
+.Facebook i {
+    font-size: 22px;
+    color: #4267B2;
+    margin-right: 10px;
+}
+
+.Facebook {
+    color: white;
+}
+
+.last-section {
+    color: red;
+    margin: 20px 0;
+    letter-spacing: 1px;
+}
+
+.last-section a {
+    color: white;
+}
+@media (max-width:600px){
+    form{
+        width: 70%;
+    }
+}
+@media (max-width:768px){
+    form{
+        width: 50%;
+    }
+}
+
+
+@media (max-width:1024px){
+    form{
+        width: 70%;
+    }
+}
